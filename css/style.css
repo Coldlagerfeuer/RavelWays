@@ -218,7 +218,12 @@ body {
 #slide-1 {
 	background-image: url('../images/background.jpg');
 	color: #ffffff;
-	text-shadow: 0 0 5px black;
+	text-shadow:  1px  1px 1px black,
+                  1px -1px 1px black,
+                 -1px  1px 1px black,
+                 -1px -1px 1px black;
+	
+	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
