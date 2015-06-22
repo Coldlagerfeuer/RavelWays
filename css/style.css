@@ -216,7 +216,7 @@ body {
 }
 
 #slide-1 {
-	background-image: url('../images/background.jpg');
+	background-image: url('../images/background-crop.jpg');
 	color: #ffffff;
 	text-shadow:  1px  1px 1px black,
                   1px -1px 1px black,
