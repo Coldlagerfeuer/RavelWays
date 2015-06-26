@@ -147,6 +147,38 @@ legend {
   border: 0;
 }
 
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 180px; /* Vertically center images part 1: add padding above and below text. */
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -0px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+ /*  font-weight: 300; */
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
 button,
 input,
 select,
@@ -369,7 +401,7 @@ p {
 
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 30px;
   }
 }
 
@@ -382,7 +414,7 @@ cite {
 }
 
 .text-muted {
-  color: #999999;
+  color: #000000;
 }
 
 .text-primary {
