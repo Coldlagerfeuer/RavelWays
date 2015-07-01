@@ -54,7 +54,7 @@ body {
 	background-color: #e4e6e5;
 	background-color: rgba( 228, 230, 229, .85 );
 	border-bottom: 0 none;
-	font-size: 12px;
+	font-size: 15px;
 	transition: .25s all linear;
 }
 
@@ -537,8 +537,8 @@ body {
 }
 
 #slide-8 {
-	background-color: #33CC33;
-	color: white;
+	background-color: #75dd75;
+	color: #4e4e4e;
 	font-size: 35px;
 	line-height: 50px;
 	text-align: center;
@@ -546,7 +546,7 @@ body {
 
 #slide-9 {
 	background-color: #e4a6e5;
-	color: white;
+	color: #4e4e4e;
 	font-size: 35px;
 	line-height: 50px;
 }

@@ -2227,6 +2227,7 @@ input[type="button"].btn-block {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+  
 }
 
 .dropdown-menu.pull-right {
@@ -2246,14 +2247,14 @@ input[type="button"].btn-block {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.428571429;
-  color: #333333;
+  line-height: 2;
+  color: #333333 !important;
   white-space: nowrap;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
   background-color: #357ebd;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#357ebd));
