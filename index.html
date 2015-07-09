@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/li-scroller.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
 
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -65,8 +67,7 @@
 							<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-8';">Profitour</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-9';">ROMANTIKTOUR</a></li>
-						</ul>
-					</li>
+						</ul></li>
 				</ul>
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
@@ -94,40 +95,69 @@
 		<div class="container">
 			<div id="home-row-1" class="row clearfix">
 				<div class="col-12">
-					<h1 class="font-semibold">
-						Ravelways.de
-					</h1>
+					<h1 class="font-semibold">Ravelways.de</h1>
 					<h4 class="font-semibold">Ihr Segway Vergnügen in Monschau.</h4>
 					<br> <br>
 				</div>
 				<!-- /col-12 -->
 			</div>
 			<!-- /row -->
-			 <div id="home-row-2" class="row clearfix">
-				<div class="col-12 col-sm-4">
+			<div id="home-row-2" class="row clearfix">
+				<div class="col-12">
+				
+				
+	<!-- 			<div class="latest_newsarea">
+					<ul id="ticker01" class="news_sticker">
+						<li><a href="#">My First News Item</a></li>
+						<li><a href="#">My Second News Item</a></li>
+						<li><a href="#">My Third News Item</a></li>
+						<li><a href="#">My Four News Item</a></li>
+						<li><a href="#">My Five News Item</a></li>
+						<li><a href="#">My Six News Item</a></li>
+						<li><a href="#">My Seven News Item</a></li>
+						<li><a href="#">My Eight News Item</a></li>
+						<li><a href="#">My Nine News Item</a></li>
+					</ul>
+				</div> -->
+				
+				
 					<!-- <div class="home-hover" data-slide="4">
 						<img src="images/icons/G12-Leaf-icon.png">
 					</div>
 					<span>NATUR</span> -->
 				</div>
-				<!-- <div class="col-12 col-sm-4">
-					<div class="home-hover navigation-slide" data-slide="3">
-						<img src="images/icons/G12-Place-Office-icon.png">
-					</div>
-					<span>STADT</span>
-				</div>
-				<div class="col-12 col-sm-4">
-					<div class="home-hover navigation-slide" data-slide="5">
-						<img src="images/icons/G12-Web-icon.png">
-					</div>
-					<span>ERLEBNIS</span>
-				</div> -->
 			</div>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
 	<!-- /slide1 -->
+
+
+	<!-- start news sticker -->
+	<div class="story">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="latest_newsarea">
+					<span>Latest News</span>
+					<ul id="ticker01" class="news_sticker">
+						<li><a href="touren.html#slide-7">Schnitzeltour jeden zweiten und vierten Dienstag im Monat </a></li>
+						<li><a href="#">Die neue Ravelways.de Seite ist noch in Arbeit und kann sich täglich ändern, also schau regelmäßig vorbei</a></li>
+						<!-- <li><a href="#">My Second News Item</a></li>
+						<li><a href="#">My Third News Item</a></li>
+						<li><a href="#">My Four News Item</a></li>
+						<li><a href="#">My Five News Item</a></li>
+						<li><a href="#">My Six News Item</a></li>
+						<li><a href="#">My Seven News Item</a></li>
+						<li><a href="#">My Eight News Item</a></li>
+						<li><a href="#">My Nine News Item</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End news sticker -->
+
 
 	<!-- === Slide 2 === -->
 	<div class="slide story" id="slide-2" data-slide="2">
@@ -285,8 +315,9 @@
 	<div id="footer">
 		<div class="container">
 			<p class="text-muted">
-				Copyright © Ravelways.de<br> <a class="text-muted" href="impressum.html">Impressum</a> - <a class="text-muted" href="agb.pdf">AGB</a>
-				- <a class="text-muted" href="datenschutz.html">Datenschutz</a>
+				Copyright © Ravelways.de<br> <a class="text-muted" href="impressum.html">Impressum</a> - <a class="text-muted"
+					href="files\AGB.pdf">AGB</a> - <a class="text-muted" href="datenschutz.html">Datenschutz</a> - <a class="text-muted"
+					href="teilnahmebedingungen.pdf">Teilnahmebedingungen</a>
 			</p>
 		</div>
 	</div>
@@ -301,6 +332,14 @@
 <script src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
 <script src="js/script.js"></script>
+<!-- news ticker jquery file -->
+<script src="js/jquery.li-scroller.1.0.js"></script>
+<!-- custom js file include -->
+<script src="js/custom.js"></script>
+<!-- For content animatin  -->
+<script src="js/wow.min.js"></script>
+<!-- slick slider js file -->
+<script src="js/slick.min.js"></script>
 
 <!-- fancybox init -->
 <script>

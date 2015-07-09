@@ -664,3 +664,44 @@ body {
 	cursor: pointer;
 }
 
+/*news ticker*/
+.latest_newsarea {
+  display: inline;
+  float: left;
+  width: 100%;
+  background-color: #1b1a1a;
+}
+
+.news_sticker li a{
+	display: inline-block;
+	color: #eee;
+	margin-right: 40px;
+}
+
+.latest_newsarea span {  
+  display: block;
+  float: left;
+  font-size: 16px;
+  padding: 5px 25px;
+  position: absolute;
+  z-index: 20;
+}
+.news_sticker {
+  float: right;
+  width: 100%;
+  padding: 5px 15px 5px 5px;
+  
+}
+.news_sticker li a:before {
+  content: "";
+  margin-right: 5px;
+}
+.news_sticker li a:before {  
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+/*news ticker*/
+
