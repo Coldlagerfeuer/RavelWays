@@ -112,23 +112,15 @@
 										<input type="email" class="form-control" name="phone" placeholder="Telefonnummer" required="">
 									</div>
 								</div>
-<div class="container">
-    <div class="row form-group">
-        <div class='col-sm-5'>
-            <input type='text' class="form-control" id='datetimepicker1' name="dateFrom" placeholder="Datum-Von" />
-        </div>
-        <div class='col-sm-5'>
-            <input type='text' class="form-control" id='datetimepicker2' name="dateUntil" placeholder="Datum-Bis"/>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-                $('#datetimepicker2').datetimepicker();
-            });
-        </script>
-    </div>
-</div>
 								<div class="row form-group">
+									<div class='col-sm-5'>
+										<input type='text' class="form-control" id='datetimepicker1' name="dateFrom" placeholder="Datum-Von" />
+									</div>
+									<div class='col-sm-5'>
+										<input type='text' class="form-control" id='datetimepicker2' name="dateUntil" placeholder="Datum-Bis" />
+									</div>
+								</div>
+								<div class="row form-group" style="height: 120px">
 									<div class="col-sm-10">
 										<input type="text" class="form-control" name="description" placeholder="Beschreibung" required="">
 									</div>
@@ -198,7 +190,8 @@
 				}
 			}
 		});
-
+		$('#datetimepicker1').datetimepicker();
+		$('#datetimepicker2').datetimepicker();
 	});
 </script>
 
