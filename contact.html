@@ -124,12 +124,13 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-9">
-					
-					
-						<form role="form" action="//formspree.io/ravelways@t-online.de" method="post">
+
+
+						<form role="form" action="//formspree.io/ravelways@t-online.de"
+							method="post">
 							<input type="hidden" name="_subject" value="Website contact" />
-							<input type="text" name="_gotcha" style="display: none" />
-							<input type="hidden" name="_next" value="index.html" />
+							<input type="text" name="_gotcha" style="display: none" /> <input
+								type="hidden" name="_next" value="index.html" />
 							<div class="row form-group">
 								<div class="col-sm-3">
 									<input type="text" class="form-control" id="firstName"
@@ -140,29 +141,45 @@
 										name="lastName" placeholder="Nachname" required>
 								</div>
 								<div class="col-sm-4">
-									<input type="text" class="form-control" id="tourName"
-										name="tourName" placeholder="Tourname" required>
+									<div class="form-group">
+										<select name="tours" class="form-control ">
+											<option>Spritztour</option>
+											<option>Rurtal Tour</option>
+											<option>Citytour Monschau</option>
+											<option>Malmedy Höhentour</option>
+											<option>Erlebnistour</option>
+											<option>Schnitzeltour</option>
+											<option>Profitour um das Hohe Venn</option>
+											<option>Romantiktour</option>
+											<option>Spa und Umgebung</option>
+											<option>Prüm und Umgebung</option>
+										</select>
+									</div>
+
 								</div>
 							</div>
 							<div class="row form-group">
-								<div class="col-sm-5">
-									<input type="email" class="form-control" name="_replyto"
-										placeholder="Email" required>
+								<div class="col-sm-5 input-group">
+									<span class="input-group-addon">@</span> <input type="email"
+										class="form-control" name="_replyto" placeholder="Email"
+										required>
 								</div>
 							</div>
 							<div class="row form-group">
-								<div class='col-sm-5'>
+								<div class="col-sm-5 input-group">
+								<span class="input-group-addon">Von</span> 
 									<input type='text' class="form-control" id='datetimepicker1'
 										name="dateFrom" placeholder="Datum-Von" />
 								</div>
-								<div class='col-sm-5'>
+								<div class="col-sm-5 input-group">
+								<span class="input-group-addon">Bis</span> 
 									<input type='text' class="form-control" id='datetimepicker2'
 										name="dateUntil" placeholder="Datum-Bis" />
 								</div>
 							</div>
 							<div class="row form-group" style="height: 120px">
 								<div class="col-sm-10">
-									<textarea class="form-control" name="description"
+									<textarea class="form-control" rows="3" name="description"
 										placeholder="Beschreibung"></textarea>
 								</div>
 							</div>
@@ -172,9 +189,8 @@
 										value="Submit">Anfrage senden</button>
 								</div>
 							</div>
-							
+
 						</form>
-						
 					</div>
 					<div class="col-sm-3 pull-right">
 						<address>
@@ -214,21 +230,6 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery-migrate-1.2.1.min.js"></script>
 
-<!-- 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.li-scroller.1.0.js"></script>
-<script src="js/html5shiv.js"></script>
-<script src="js/wow.min.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
-<script src="js/script.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/slick.min.js"></script>
- -->
-
-
 <script>
 	$(document).ready(function(e) {
 		var lis = $('.nav > li');
@@ -242,6 +243,13 @@
 				}
 			}
 		});
-	});
+	}
+
+	);
+	/* $('form').submit(function() {
+		alert($(this).serialize());
+		event.preventDefault();
+		return false;
+	}); */
 </script>
 </html>
