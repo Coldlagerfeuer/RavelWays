@@ -777,7 +777,7 @@ body {
   
 }
 .news_sticker li a:before {
-  content: "ï„�";
+  content: "*";
   margin-right: 5px;
 }
 .news_sticker li a:before {  
