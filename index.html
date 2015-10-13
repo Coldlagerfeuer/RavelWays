@@ -59,7 +59,7 @@
 								<ul class="dropdown-menu sub-menu">
 									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-2';">Spritztour</a></li>
 									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-10';">Rurtal Tour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-9';">ROMANTIKTOUR</a></li>
+									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-9';">Romantiktour</a></li>
 									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-13';">Rursee</a></li>
 								</ul></li>
 							<li><a class="trigger right-caret">STADTTOUREN<span class="caret"></span></a>
@@ -377,6 +377,28 @@
 			}
 		});
 
+	});
+	
+	$(function() {
+		$(".dropdown-menu > li > a.trigger").on(
+				"click",
+				function(e) {
+					var current = $(this).next();
+					var grandparent = $(this).parent().parent();
+					if ($(this).hasClass('left-caret')
+							|| $(this).hasClass('right-caret'))
+						$(this).toggleClass('right-caret left-caret');
+					grandparent.find('.left-caret').not(this).toggleClass(
+							'right-caret left-caret');
+					grandparent.find(".sub-menu:visible").not(current).hide();
+					current.toggle();
+					e.stopPropagation();
+				});
+		$(".dropdown-menu > li > a:not(.trigger)").on("click", function() {
+			var root = $(this).closest('.dropdown');
+			root.find('.left-caret').toggleClass('right-caret left-caret');
+			root.find('.sub-menu:visible').hide();
+		});
 	});
 </script>
 
