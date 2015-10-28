@@ -659,6 +659,16 @@ body {
 	line-height: 50px;
 	text-align: center;
 }
+
+#slide-27 {
+	background-color: #FFCC99;
+	color: #330066;
+	font-size: 35px;
+	line-height: 50px;
+	text-align: center;
+}
+
+
 #lightbox-out {
 	background-color: rgba( 0, 0, 0, 0.7 );
 	height: 100%;
