@@ -29,14 +29,6 @@
 			$("#menu").load("menu.html #menu");
 		</script>
 	</div>
-	<!-- === Arrows === -->
-	<div id="arrows">
-		<div id="arrow-up" class="disabled"></div>
-		<div id="arrow-down"></div>
-		<div id="arrow-left" class="disabled visible-lg"></div>
-		<div id="arrow-right" class="disabled visible-lg"></div>
-	</div>
-	<!-- /.arrows -->
 	<!-- === MAIN Background === -->
 	<div class="slide story" id="slide-1" >
 		<div class="container">
@@ -161,7 +153,6 @@
 <script>
 	$(document).ready(function(e) {
 		var lis = $('.nav > li');
-		menu_focus(lis[0], 1);
 
 		$(".fancybox").fancybox({
 			padding : 10,
