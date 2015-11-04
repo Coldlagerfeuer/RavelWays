@@ -3,7 +3,6 @@
 <head lang="de">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
 <title>Ravelways - Nur fliegen ist schöner</title>
 <meta name="description"
 	content="Ravelways bietet Segway Touren in den Regionen Monschau in der Eifel am Nationalpark, Malmedy, Spa, Lüttich, Eupen, Köln, Düsseldorf, Maastricht" />
@@ -13,102 +12,23 @@
 	  Rursee, Rurberg, Wofelsbach, Simmerath, Segway Monschau, Segway Eifel, Erlebnistour, Einführungstour, Prüm, Trier, Bonn, Rheinauen, St´Vith, Vennbahnweg, Ravelweg, Nationalpark,
 	  Kalterherberg, Bütgenbach, Belgien,Schnitzeltour, HohesVenn, Stadtrundfahrt, Stadtbesichtigung, Besichtigung, Schlemmertour, Telekom Tower" />
 <meta property="og:title" content="Ravelways - Nur fliegen ist schöner">
-
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="dropdown-sub.css">
-
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="css/li-scroller.css" rel="stylesheet">
 <link href="css/theme.css" rel="stylesheet">
-
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-
 <link rel="prefetch" href="images/zoom.png">
-
 </head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 <body>
-	<div class="navbar navbar-fixed-top" data-activeslide="1">
-		<div class="container">
-
-			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-			</button>
-
-
-			<div class="nav-collapse collapse navbar-responsive-collapse">
-				<ul class="nav row">
-					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Startseite"> <span
-							class="icon icon-home"></span> <span class="text">START</span>
-					</a></li>
-					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Allgemeines"> <span
-							class="icon icon-user"></span> <span class="text">ALLGEMEIN</span>
-					</a></li>
-					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Galerie"> <span
-							class="icon icon-briefcase"></span> <span class="text">GALERIE</span>
-					</a></li>
-					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" style="cursor: pointer;" onclick="window.location='contact.html';"
-						title="Kontaktdaten"> <span class="icon icon-envelope"></span> <span class="text">KONTAKT</span>
-					</a></li>
-					<li class="col-12 col-sm-2 dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false"> TOUREN<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a style="cursor: pointer;" onclick="window.location='touren.html';">ÜBERSICHT</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a class="trigger right-caret">NATURTOUREN<span class="caret"></span></a>
-								<ul class="dropdown-menu sub-menu">
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-2';">Spritztour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-10';">Rurtal Tour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-9';">Romantiktour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-13';">Rursee</a></li>
-								</ul></li>
-							<li><a class="trigger right-caret">STADTTOUREN<span class="caret"></span></a>
-								<ul class="dropdown-menu sub-menu">
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-4';">Monschau Citytour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-14';">Monschau und Umgebung</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-5';">Malmedy Höhentour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-11';">Spa und Umgebung</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-12';">Prüm und Umgebung</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-15';">Bonn Rheinauen</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-16';">Bonn City</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-17';">Köln</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-18';">Düsseldorf</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-19';">Maastricht</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-22';">Eupen und Umgebung</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-23';">Trier Citytour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-24';">Bitburg und Umgebung</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-25';">Schleiden</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-26';">St´Vith</a></li>
-								</ul></li>
-							<li><a class="trigger right-caret">ERLEBNISTOUREN<span class="caret"></span></a>
-								<ul class="dropdown-menu sub-menu">
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-6';">Erlebnistour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-7';">Schnitzeltour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-8';">Wein Tour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-20';">Ravelweg Tour</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-21';">Ravelweg XXL</a></li>
-									<li><a style="cursor: pointer;" onclick="window.location='touren.html#slide-27';">Senfmühlentour</a></li>
-								</ul></li>
-						</ul></li>
-					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-4" style="cursor: pointer;" onclick="window.location='contact.html';"
-						title="Gutscheine"> <span class="icon icon-euro"></span> <span class="text">Gutscheine</span>
-					</a></li>
-				</ul>
-				<div class="row">
-					<div class="col-sm-2 active-menu"></div>
-				</div>
-			</div>
-			<!-- /.nav-collapse -->
-		</div>
-		<!-- /.container -->
+	<div id="menu">
+		<script type="text/javascript">
+			$("#menu").load("menu.html #menu");
+		</script>
 	</div>
-	<!-- /.navbar -->
-
-
 	<!-- === Arrows === -->
 	<div id="arrows">
 		<div id="arrow-up" class="disabled"></div>
@@ -117,8 +37,6 @@
 		<div id="arrow-right" class="disabled visible-lg"></div>
 	</div>
 	<!-- /.arrows -->
-
-
 	<!-- === MAIN Background === -->
 	<div class="slide story" id="slide-1" data-slide="1">
 		<div class="container">
@@ -135,8 +53,6 @@
 		<!-- /container -->
 	</div>
 	<!-- /slide1 -->
-
-
 	<!-- start news sticker -->
 	<div class="story">
 		<div class="row">
@@ -144,8 +60,8 @@
 				<div class="latest_newsarea">
 					<span>Latest News</span>
 					<ul id="ticker01" class="news_sticker">
-						<li><a href="contact.html">              Ein Gutschein von Ravelways ist das passendes Geschenk für jedermann!</a></li>
-						<li><a href="touren.html#slide-7">   Senfmühlentour! Das ideale für Gourmet Segway-Fahrer!!! </a></li>
+						<li><a href="contact.html"> Ein Gutschein von Ravelways ist das passendes Geschenk für jedermann!</a></li>
+						<li><a href="touren.html#slide-7"> Senfmühlentour! Das ideale für Gourmet Segway-Fahrer!!! </a></li>
 						<li><a href="#">Die neue Ravelways.de Seite ist noch in Arbeit und kann sich täglich ändern, also schau regelmäßig vorbei</a></li>
 						<li><a href="files/flyer.pdf">Schauen Sie sich doch mal unseren neuen Flyer an</a></li>
 						<!-- <li><a href="#">My Four News Item</a></li>
@@ -160,14 +76,13 @@
 		</div>
 	</div>
 	<!-- End news sticker -->
-
-
 	<!-- === Slide 2 === -->
 	<div class="slide story" id="slide-2" data-slide="2">
 		<div class="container">
 			<div class="row title-row">
-				<div class="col-12 font-thin">Segway Touren mit RavelWays in und um Monschau am Nationalpark in der Eifel und im benachbarten Belgien. Wir bieten Fahrten 
-				mit dem Segway hauptsächlich in der Natur als auch in vielen Städten wie Bonn, Köln, Düsseldorf, Malmedy, Eupen, Spa, Maastricht und vieles mehr.</div>
+				<div class="col-12 font-thin">Segway Touren mit RavelWays in und um Monschau am Nationalpark in der Eifel und im benachbarten
+					Belgien. Wir bieten Fahrten mit dem Segway hauptsächlich in der Natur als auch in vielen Städten wie Bonn, Köln, Düsseldorf, Malmedy,
+					Eupen, Spa, Maastricht und vieles mehr.</div>
 			</div>
 			<!-- /row -->
 			<div class="row line-row">
@@ -213,18 +128,17 @@
 			</div>
 			<!-- /row -->
 			<!-- row -->
-				<div class="row subtitle-row">
-					<div class="col-12 font-light">
-							Möchten Sie mehr erfahren ? <br>
-							Dann schauen Sie doch mal in unseren aktuellen <a href="files/flyer.pdf" onclick="window.location='files/flyer.pdf';" >Flyer</a>.
-					</div>
-			</div>						
+			<div class="row subtitle-row">
+				<div class="col-12 font-light">
+					Möchten Sie mehr erfahren ? <br> Dann schauen Sie doch mal in unseren aktuellen <a href="files/flyer.pdf"
+						onclick="window.location='files/flyer.pdf';">Flyer</a>.
+				</div>
+			</div>
 			<!-- row -->
 		</div>
 		<!-- /container -->
 	</div>
 	<!-- /slide2 -->
-
 	<!-- === SLide 3 - Portfolio -->
 	<div class="slide story" id="slide-3" data-slide="3">
 		<div class="row">
@@ -252,12 +166,10 @@
 				<a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p06-large.png"><img class="thumb"
 					src="images/portfolio/p06-small.jpg" alt=""></a>
 			</div>
-
 		</div>
 		<!-- /row -->
 	</div>
 	<!-- /slide3 -->
-
 	<!-- === Slide 4 / Contact === -->
 	<div class="slide story" id="slide-4" data-slide="4">
 		<div class="container">
@@ -322,23 +234,16 @@
 		<!-- /container -->
 	</div>
 	<!-- /Slide 4 -->
-
-
 	<div id="footer">
 		<div class="container">
 			<p class="text-muted">
-				Copyright © Ravelways.de<br> 
-				<a class="text-muted" href="impressum.html">Impressum</a> 
-				- <a class="text-muted" href="files/AGB.pdf">AGB</a>
-				- <a class="text-muted" href="datenschutz.html">Datenschutz</a> 
-				- <a class="text-muted" href="files/teilnahmebedingungen.pdf">Teilnahmebedingungen</a>
+				Copyright © Ravelways.de<br> <a class="text-muted" href="impressum.html">Impressum</a> - <a class="text-muted" href="files/AGB.pdf">AGB</a>
+				- <a class="text-muted" href="datenschutz.html">Datenschutz</a> - <a class="text-muted" href="files/teilnahmebedingungen.pdf">Teilnahmebedingungen</a>
 				- <a class="text-muted" href="files/flyer.pdf">Flyer</a>
 			</p>
 		</div>
 	</div>
-
 </body>
-
 <!-- SCRIPTS -->
 <script src="js/html5shiv.js"></script>
 <script src="js/jquery-1.10.2.min.js"></script>
@@ -355,7 +260,6 @@
 <script src="js/wow.min.js"></script>
 <!-- slick slider js file -->
 <script src="js/slick.min.js"></script>
-
 <!-- fancybox init -->
 <script>
 	$(document).ready(function(e) {
@@ -395,5 +299,4 @@
 		});
 	});
 </script>
-
 </html>

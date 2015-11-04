@@ -4,18 +4,8 @@
         //////////// by www.wpfreeware.com======================-->
 
  jQuery(document).ready(function(){
-   // for search bar
-     $('#searchIcon').on("click", function () {
-      $(this).parents('.header_search').find("#shide").css('top','0px')
-      $(this).parents('.header_search').find("#shide").css('display','block')
-     
-});
-    $('.remove').on("click", function () {
-    $(this).parents('#shide').fadeOut();
-    $(this).parents('#shide').css('top','-80px')
-});    
    
-  //Check to see if the window is top if not then display button
+  // Check to see if the window is top if not then display button
   $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
       $('.scrollToTop').fadeIn();
@@ -24,7 +14,7 @@
     }
   });
    
-     //Click event to scroll to top
+     // Click event to scroll to top
   $('.scrollToTop').click(function(){
     $('html, body').animate({scrollTop : 0},800);
     return false;
@@ -35,28 +25,18 @@
 
 });
 
- wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100
-      }
-    );
-    wow.init();
-    // document.getElementById('moar').onclick = function() {
-    //   var section = document.createElement('section');
-    //   section.className = 'section--purple wow fadeInDown';
-    //   this.parentNode.insertBefore(section, this);
-    // };
 
   <!-- Preloader -->
 
-  //<![CDATA[
+  // <![CDATA[
     jQuery(window).load(function() { // makes sure the whole site is loaded
       $('#status').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(700).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('#preloader').delay(700).fadeOut('slow'); // will fade out the white
+													// DIV that covers the
+													// website.
       $('body').delay(700).css({'overflow':'visible'});
     })
-  //]]>
+  // ]]>
 
   // slick slider call
   $(document).ready(function(){  
