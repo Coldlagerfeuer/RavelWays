@@ -65,7 +65,7 @@ $(document).ready(function(e) {
 							var tops = [];
 							
 							$('.story').each(function(index, element) {
-								tops.push( $(element).offset().top - 200 );
+								tops.push( $(element).top - 200 );
 							});
 				
 							var scroll_top = $(this).scrollTop();
@@ -155,7 +155,7 @@ function menu_focus( element, i ) {
 	
 	var icon = $(element).find('.icon');
 	
-	var left_pos = icon.offset().left - $('.nav').offset().left;
+	var left_pos = icon.left - $('.nav').left;
 	var el_width = icon.width() + $(element).find('.text').width() + 10;
 	
 	$('.active-menu').stop(false, false).animate(
@@ -195,29 +195,29 @@ jQuery(document).ready(function ($) {
 	
 	//Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
 	//easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
-	function goToByScroll(dataslide) {
-		var offset_top = ( dataslide == 1 ) ? '0px' : $('.slide[data-slide="' + dataslide + '"]').offset().top;
-		
-		htmlbody.stop(false, false).animate({
-			scrollTop: offset_top
-		}, 1500, 'easeInOutQuart');
-	}
+//	function goToByScroll(dataslide) {
+//		var offset_top = ( dataslide == 1 ) ? '0px' : $('.slide[data-slide="' + dataslide + '"]').offset().top;
+//		
+//		htmlbody.stop(false, false).animate({
+//			scrollTop: offset_top
+//		}, 1500, 'easeInOutQuart');
+//	}
 	
 	//When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
-	links.click(function (e) {
-		e.preventDefault();
-		dataslide = $(this).attr('data-slide');
-		goToByScroll(dataslide);
-		$(".nav-collapse").collapse('hide');
-	});
-	
-	//When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
-	$('.navigation-slide').click(function (e) {
-		e.preventDefault();
-		dataslide = $(this).attr('data-slide');
-		goToByScroll(dataslide);
-		$(".nav-collapse").collapse('hide');
-	});
+//	links.click(function (e) {
+//		e.preventDefault();
+//		dataslide = $(this).attr('data-slide');
+//		goToByScroll(dataslide);
+//		$(".nav-collapse").collapse('hide');
+//	});
+//	
+//	//When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
+//	$('.navigation-slide').click(function (e) {
+//		e.preventDefault();
+//		dataslide = $(this).attr('data-slide');
+//		goToByScroll(dataslide);
+//		$(".nav-collapse").collapse('hide');
+//	});
 });
 
 ///***************
@@ -285,58 +285,58 @@ jQuery(document).ready(function ($) {
 	);
 });
 
-/******************
-* = Arrows click  *
-******************/
-jQuery(document).ready(function ($) {
-	//Cache some variables
-	var arrows = $('#arrows div');
-	
-	arrows.click(function(e) {
-		e.preventDefault();
-		
-		if ( $(this).hasClass('disabled') )
-			return;
-		
-		var slide = null;
-		var datasheet = $('.nav > li.active').data('slide');
-		var offset_top = false;
-		var offset_left = false;
-		
-		
-		switch( $(this).attr('id') ) {
-			case 'arrow-up':
-				offset_top = ( datasheet - 1 == 1 ) ? '0px' : $('.slide[data-slide="' + (datasheet-1) + '"]').offset().top;
-				break;
-			case 'arrow-down':
-				offset_top = $('.slide[data-slide="' + (datasheet+1) + '"]').offset().top;
-				break;
-			case 'arrow-left':
-				offset_left = $('#slide-3 .row').offset().left + 452;
-				if ( offset_left > 0 ) {
-					offset_left = '0px';
-				}
-				break;
-			case 'arrow-right':
-				offset_left = $('#slide-3 .row').offset().left - 452;
-				if ( offset_left < $('body').width() - $('#slide-3 .row').width() ) {
-					offset_left = $('body').width() - $('#slide-3 .row').width();
-				}
-				break;
-		}
-		
-		if ( offset_top != false ) {
-			htmlbody.stop(false, false).animate({
-				scrollTop: offset_top
-			}, 1500, 'easeInOutQuart');
-		}
-		
-		if ( offset_left != false ) {
-			if ( $('#slide-3 .row').width() != $('body').width() ) {
-				$('#slide-3 .row').stop(false, false).animate({
-					left: offset_left
-				}, 1500, 'easeInOutQuart');
-			}
-		}
-	});
-});
+///******************
+//* = Arrows click  *
+//******************/
+//jQuery(document).ready(function ($) {
+//	//Cache some variables
+//	var arrows = $('#arrows div');
+//	
+//	arrows.click(function(e) {
+//		e.preventDefault();
+//		
+//		if ( $(this).hasClass('disabled') )
+//			return;
+//		
+//		var slide = null;
+//		var datasheet = $('.nav > li.active').data('slide');
+//		var offset_top = false;
+//		var offset_left = false;
+//		
+//		
+//		switch( $(this).attr('id') ) {
+//			case 'arrow-up':
+//				offset_top = ( datasheet - 1 == 1 ) ? '0px' : $('.slide[data-slide="' + (datasheet-1) + '"]').top;
+//				break;
+//			case 'arrow-down':
+//				offset_top = $('.slide[data-slide="' + (datasheet+1) + '"]').top;
+//				break;
+//			case 'arrow-left':
+//				offset_left = $('#slide-3 .row').offset().left + 452;
+//				if ( offset_left > 0 ) {
+//					offset_left = '0px';
+//				}
+//				break;
+//			case 'arrow-right':
+//				offset_left = $('#slide-3 .row').offset().left - 452;
+//				if ( offset_left < $('body').width() - $('#slide-3 .row').width() ) {
+//					offset_left = $('body').width() - $('#slide-3 .row').width();
+//				}
+//				break;
+//		}
+//		
+//		if ( offset_top != false ) {
+//			htmlbody.stop(false, false).animate({
+//				scrollTop: offset_top
+//			}, 1500, 'easeInOutQuart');
+//		}
+//		
+//		if ( offset_left != false ) {
+//			if ( $('#slide-3 .row').width() != $('body').width() ) {
+//				$('#slide-3 .row').stop(false, false).animate({
+//					left: offset_left
+//				}, 1500, 'easeInOutQuart');
+//			}
+//		}
+//	});
+//});
