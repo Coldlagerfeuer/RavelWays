@@ -803,6 +803,45 @@ body {
 }
 /*news ticker*/
 
+.erfahrenButton {
+	-moz-box-shadow:inset 0px 14px 15px 3px #802c80;
+	-webkit-box-shadow:inset 0px 14px 15px 3px #802c80;
+	box-shadow:inset 0px 14px 15px 3px #802c80;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #990f46), color-stop(1, #2da13a));
+	background:-moz-linear-gradient(top, #990f46 5%, #2da13a 100%);
+	background:-webkit-linear-gradient(top, #990f46 5%, #2da13a 100%);
+	background:-o-linear-gradient(top, #990f46 5%, #2da13a 100%);
+	background:-ms-linear-gradient(top, #990f46 5%, #2da13a 100%);
+	background:linear-gradient(to bottom, #990f46 5%, #2da13a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#990f46', endColorstr='#2da13a',GradientType=0);
+	background-color:#990f46;
+	-moz-border-radius:27px;
+	-webkit-border-radius:27px;
+	border-radius:27px;
+	border:2px solid #8f2937;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:17px 41px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c93eb9;
+}
+.erfahrenButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2da13a), color-stop(1, #990f46));
+	background:-moz-linear-gradient(top, #2da13a 5%, #990f46 100%);
+	background:-webkit-linear-gradient(top, #2da13a 5%, #990f46 100%);
+	background:-o-linear-gradient(top, #2da13a 5%, #990f46 100%);
+	background:-ms-linear-gradient(top, #2da13a 5%, #990f46 100%);
+	background:linear-gradient(to bottom, #2da13a 5%, #990f46 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2da13a', endColorstr='#990f46',GradientType=0);
+	background-color:#2da13a;
+}
+.erfahrenButton:active {
+	position:relative;
+	top:1px;
+}
 
 
 .anfrageButton {
